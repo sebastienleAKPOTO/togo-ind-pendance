@@ -76,12 +76,19 @@ body{
     background-color: rgb(118, 153, 116);
 }
 
+.arrière{
+    background-image:url(../images/deux\ lions.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
 .wep {justify-content: center;
 }
 @media (max-width:3280px) {
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 }
     
@@ -89,18 +96,25 @@ body{
 @media (max-width:1440px) {
 .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+    
+@media (max-whidth:1000px) {
+.grid{
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 }
     
-@media (max-whidth:1280px) {
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-}
-    
 @media (max-width:720px) {
+.grid , .grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;             
+}
+}
+
+@media (max-width:360px) {
 .grid , .grid2{
     display: grid;
     grid-template-columns: 1fr ;             
